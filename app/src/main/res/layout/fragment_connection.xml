@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.szymi44.bluetoothapp.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnMakeDisc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="@string/makeDiscoverable" />
+
+    <Button
+        android:id="@+id/btnDisc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnMakeDisc"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="@string/discover" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnDisc"
+        android:layout_below="@+id/btnDisc"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/connect" />
+
+    <EditText
+        android:id="@+id/etMassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnConnect"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/massageText"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMassage"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/send" />
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSend"
+        android:text="@string/incomingMassage"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/btnDevice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMakeDisc"
+        android:layout_toStartOf="@+id/btnDisc"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="@string/device" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/battleships" />
+
+</RelativeLayout>
